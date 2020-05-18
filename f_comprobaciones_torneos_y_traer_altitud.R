@@ -57,7 +57,7 @@ f_comprobaciones_torneos_y_traer_altitud <- function(data){
                                        na.strings=c("#N/D", "#VALOR","#¡VALOR!", "#VALOR!", "#DIV/0!", "#NOMBRE?", "#REF", "Err:522"))
   torneos_tabla_maestra$tourney_id_indepe <- as.character(torneos_tabla_maestra$tourney_id_indepe)
   
-  ################ COMPROBACIONES #################### OBLIGATORIO EJECUTAR PORQUE CREA data2
+  ################ COMPROBACIONES ##################### OBLIGATORIO EJECUTAR PORQUE CREA data2
     
     ##############################################################################
     ## comprobamos consistencia de torneos en torneos tabla maestra
