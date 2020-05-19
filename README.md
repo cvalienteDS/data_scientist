@@ -6,7 +6,8 @@ Visualization, plot.
 https://public.flourish.studio/visualisation/585459/
 
 ## Clustering
-Execute it yourself from clustering/main.R
+In order to reproduce it yourself feel free to ask me for some sources via linkedin: https://www.linkedin.com/in/carlos-valiente-casas-a270592a/ 
+Later you can execute it from clustering/main.R
 ### Feature engineering, clustering y random forest. "f_clusteringBySurface_for_github.R"
 - Data preparation and normalization for clustering
 - Print and plot results
@@ -22,6 +23,3 @@ Simple data exploration with dplyr
 
 ## Fuzzy search. "f_fuzzy_join_v2.R"
 It joins 2 databases from different sources and therefore with different IDs, through similarity in the tennis player's name + last name (applicable to any other kind of entity)
-
-Note: In order to reproduce that code by yourself, feel free to ask me for some sources via linkedin:
-https://www.linkedin.com/in/carlos-valiente-casas-a270592a/
