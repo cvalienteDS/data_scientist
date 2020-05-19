@@ -5,9 +5,7 @@
 # In[ ]:
 
 def predictKeras(df):
-    
-    
-    
+
     import os
     import pandas as pd
     import numpy as np
@@ -47,13 +45,6 @@ def predictKeras(df):
     pd.set_option('display.max_columns', 500)
     pd.options.display.max_rows = 999
     
-    
-    # In[ ]:
-
-#    os.chdir('C:/...')
-#    nombreCsv = 'detalle_partidos_predicciones_from_R.csv'
-#    df = pd.read_csv('./'+nombreCsv, sep='\t',decimal = '.' )
-    
     df.rename(columns={'Q.1': 'Q1', 'Q.2': 'Q2','partidos.j1': 'partidosj1','partidos.j2': 'partidosj2',
                    'main.qualy_v2': 'mainqualy_v2', 'J1.R1.' : 'J1R1' , 'J2.R1.' : 'J2R1', 'partido.completado.':'partidocompletado',
                    'multiplicador.importancia.del.partido':'multiplicadorimportanciadelpartido'}, inplace=True)
@@ -90,7 +81,7 @@ def predictKeras(df):
     
     # In[ ]:
     # En esta celda se hace one hot enconding para las variabes categoricas.
-    # En los datos que vayamos a predecir es posible que no estén todos los tipos de level asi que hay que hacer una argucia
+    # En los datos que vayamos a predecir es posible que no estén todos los tipos de level asi que hay que considerarlo
     if os.path.exists('C:/.../models/custom_loss_function'):
         os.chdir('C:/.../models/custom_loss_function')
     else:
@@ -163,7 +154,7 @@ def predictKeras(df):
                 y_full[i, 0] = 1.0 # si en y pone win, entonces en la columna cero les pongo 1. Que son ganar
     #        if y_i == "loss":
     #            y_full[i, 1] = 1.0
-    #         se deja libre la columna 1, que son todo cerosy representa el 'no bet'
+    #         se deja libre la columna 1, que son todo ceros y representa el 'no bet'
             y_full[i, 2] = data.iloc[i, data.columns.get_loc('odds_j1_pinnacle')] # las cuotas
         return X, y_full, y
     X, y, outcome = get_data() # se llama a la funcion recien creada y se generan 3 objetos: X que son las predictoras, 'y' que es el target. outcome es una matriz para la funcion de pérdida 
@@ -309,7 +300,7 @@ def predictKeras(df):
 #    K.eval(odds_loss(true, pred))
     
     
-    # The above is the odds loss described in our medium article. It measures the profit or loss average over the input for a unit stake.
+    # It measures the profit or loss average over the input for a unit stake.
     
     
     # In[ ]:
