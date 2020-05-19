@@ -6,7 +6,7 @@ Visualization, plot.
 https://public.flourish.studio/visualisation/585459/
 
 ## Clustering
-Reproducible desde clustering/main.R
+Execute it yourself from clustering/main.R
 ### Feature engineering, clustering y random forest. "f_clusteringBySurface.R"
 - Data preparation and normalization for clustering
 - Print and plot results
