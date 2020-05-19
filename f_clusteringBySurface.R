@@ -1,5 +1,10 @@
-f_clusterBySurface <- function(trainYears, numSurfClusters, distanceMethod = 'ward.D',
-                               data, minReg = 100, desarrollando = F, generar_clusters = F){
+f_clusterBySurface <- function(trainYears = c(2010:2019),
+                               numSurfClusters = 6,
+                               distanceMethod = 'ward.D',
+                               data = dataIN,
+                               minReg = 100,
+                               desarrollando = F, 
+                               generar_clusters = F){
 
   suppressMessages(require(tidyr))
   suppressMessages(library(dplyr))
