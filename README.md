@@ -22,3 +22,6 @@ Exploración de datos simple con dplyr
 ### Fuzzy search. "f_fuzzy_join_v2.R"
 Une 2 bases de datos de distintas fuentes y por tanto con IDs distintos, a través de similitud en el nombre del tenista (aplicable a cualquier otro tipo de entidad)
 It joins 2 databases from different sources and therefore with different IDs, through similarity in the tennis player's name + last name (applicable to any other kind of entity)
+
+Note: In order to reproduce that code by yourself, feel free to ask me for some sources via linkedin:
+https://www.linkedin.com/in/carlos-valiente-casas-a270592a/
