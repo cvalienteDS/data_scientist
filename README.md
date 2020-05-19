@@ -7,7 +7,7 @@ https://public.flourish.studio/visualisation/585459/
 
 ## Clustering
 Execute it yourself from clustering/main.R
-### Feature engineering, clustering y random forest. "f_clusteringBySurface.R"
+### Feature engineering, clustering y random forest. "f_clusteringBySurface_for_github.R"
 - Data preparation and normalization for clustering
 - Print and plot results
 - Save random forest predictive model in order to predict new observations
