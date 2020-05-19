@@ -6,6 +6,10 @@ Some pieces of code for data portfolio
 - Print and plot results
 - Save random forest predictive model in order to predict new observations
 
+### Ranking chart
+Visualization, plot.
+https://public.flourish.studio/visualisation/585459/
+
 ### Keras neural network with custom loss function. "CustomLossFunction.py"
 Based on: https://medium.com/@media_73863/machine-learning-for-sports-betting-not-a-basic-classification-problem-b42ae4900782
 
