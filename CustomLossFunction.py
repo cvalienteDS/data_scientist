@@ -91,10 +91,10 @@ def predictKeras(df):
     # In[ ]:
     # En esta celda se hace one hot enconding para las variabes categoricas.
     # En los datos que vayamos a predecir es posible que no estén todos los tipos de level asi que hay que hacer una argucia
-    if os.path.exists('C:/Users/Carlos/Google Drive/mbit data science/TFM/models/custom_loss_function'):
-        os.chdir('C:/Users/Carlos/Google Drive/mbit data science/TFM/models/custom_loss_function')
+    if os.path.exists('C:/.../models/custom_loss_function'):
+        os.chdir('C:/.../models/custom_loss_function')
     else:
-       os.chdir('C:/Users/cvaliente/Google Drive/mbit data science/TFM/models/custom_loss_function') 
+       os.chdir('C:/.../models/custom_loss_function') 
     
     
     level_dummies = pd.read_pickle('level_dummies.pkl')
@@ -253,10 +253,10 @@ def predictKeras(df):
         cols.sort()
         
         from sklearn.externals import joblib
-        if os.path.exists('C:/Users/Carlos/Google Drive/mbit data science/TFM/models/custom_loss_function'):
-            os.chdir('C:/Users/Carlos/Google Drive/mbit data science/TFM/models/custom_loss_function')
+        if os.path.exists('C:/.../custom_loss_function'):
+            os.chdir('C:/.../custom_loss_function')
         else:
-           os.chdir('C:/Users/cvaliente/Google Drive/mbit data science/TFM/models/custom_loss_function')
+           os.chdir('C:/.../custom_loss_function')
         
         
         scaler_filename = "scaler_predecir.save"
