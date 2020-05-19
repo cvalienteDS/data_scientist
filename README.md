@@ -5,6 +5,7 @@ Some pieces of code for data portfolio
 - Data preparation and normalization for clustering
 - Print and plot results
 - Save random forest predictive model in order to predict new observations
+Reproducible desde clustering/main.R
 
 ### Ranking chart
 Visualization, plot.
@@ -14,7 +15,7 @@ https://public.flourish.studio/visualisation/585459/
 Based on: https://medium.com/@media_73863/machine-learning-for-sports-betting-not-a-basic-classification-problem-b42ae4900782
 
 ### Integridad referencial y join. "f_comprobaciones_torneos_y_traer_altitud.R"
-Comprueba la integridad referencial entre dos CSVs y si no existe la crea. data representa una tabla de hechos, y torneos representa una dimensión. Una vez validada la integridad importa la variable altitud a la tabla de hechos y la deja preparada para análisis y machine learning.
+Función que comprueba la integridad referencial entre dos CSVs y si no existe la crea. data representa una tabla de hechos, y torneos representa una dimensión. Una vez validada la integridad importa la variable altitud a la tabla de hechos y la deja preparada para análisis y machine learning. Se puede llamar a esta función desde clustering/main.R
 
 ### "EDA.md"
 Exploración de datos simple con dplyr
