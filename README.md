@@ -1,13 +1,14 @@
 # code_portfolio
 Some pieces of code for data portfolio
 
-## Feature engineering, clustering y random forest.
-### f_clusteringBySurface.R
+### Feature engineering, clustering y random forest.
+#### f_clusteringBySurface.R
 - Data preparation and normalization for clustering
 - Print and plot results
 - Save random forest predictive model in order to predict new observations
 
 ## Keras neural network with custom loss function
+
 CustomLossFunction.py
 Based on: https://medium.com/@media_73863/machine-learning-for-sports-betting-not-a-basic-classification-problem-b42ae4900782
 
