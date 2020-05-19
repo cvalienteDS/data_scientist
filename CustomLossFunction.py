@@ -50,7 +50,7 @@ def predictKeras(df):
     
     # In[ ]:
 
-#    os.chdir('C:/Users/Carlos/Google Drive/alex_vicens_carlos_valiente/comparar CSVs')
+#    os.chdir('C:/...')
 #    nombreCsv = 'detalle_partidos_predicciones_from_R.csv'
 #    df = pd.read_csv('./'+nombreCsv, sep='\t',decimal = '.' )
     
