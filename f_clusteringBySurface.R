@@ -72,17 +72,17 @@ suppressMessages(require(clusterSim))
 dataNumNoNa <- apply(dataNum,2,function(x) {
   if(is.numeric(x)) ifelse(is.na(x),median(x,na.rm=T),x) else x})
 scaler <- data.Normalization(dataNumNoNa, "n4") # esta normalizacion es peligrosa de usar si hay algun elemento muy outlier, en ese caso habria que usar la n1.
-# pero no me interesa porque la n1 te deja numeros mas grandes y se me jode la relacion con altitud que va de 0 a 2.
+# pero no me interesa porque la n1 te deja numeros mas grandes y se me estropea la relacion con altitud que va de 0 a 2.
 data_norm <- as.data.frame(scaler)
 
-data_norm <- cbind(data_norm, dataCat[,'independat.surface']) # pongo 2 veces surface para darle más peso. O no...
+data_norm <- cbind(data_norm, dataCat[,'independat.surface']) # pongo 2 veces surface para darle más peso
 colnames(data_norm)[ncol(data_norm)] <- "independat.surface"
 data_norm$independat.surface <- as.character(data_norm$independat.surface)
 
 # hay que hacer dummy con las columnas de texto (surface)
 #################################### Otra aproximación alternativa a dummies
 ## Le está dando más importancia de la que quiero a la superficie así que voy a hacer una variable numérica que codifique las diferentes superficies,
-## en lugar del hot encoding que estoy haciendo hasta ahora
+## en lugar del one hot encoding que estoy haciendo hasta ahora
 ########################################
 dumy = F
 if(dumy == F){
@@ -98,7 +98,7 @@ if(dumy == F){
   }) 
   dummydf$surface_char <- NULL
   dummydf$independat.surface <- NULL
-  # COMPROBADO ASIGNA BIEN CON LAS SIGUIENTES CONSULTAS
+  # COMPROBADO QUE ASIGNA BIEN CON LAS SIGUIENTES CONSULTAS
   # dummydf %>% dplyr::select('surface', 'surface_char') %>% head(20)
   # dummydf %>% dplyr::select('surface', 'surface_char') %>% filter(surface_char == "Hard") %>% head(20)
 }
