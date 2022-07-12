@@ -20,6 +20,3 @@ Based on: https://medium.com/@media_73863/machine-learning-for-sports-betting-no
 
 ## "EDA.md"
 Simple data exploration with dplyr
-
-## Fuzzy search. "f_fuzzy_join_v2.R"
-It joins 2 databases from different sources and therefore with different IDs, through similarity in the tennis player's name + last name (applicable to any other kind of entity)
