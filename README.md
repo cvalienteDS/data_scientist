@@ -2,23 +2,32 @@
 Some pieces of code for data portfolio
 
 ## Ranking chart
-Visualization, [plot](https://public.flourish.studio/visualisation/585459/).
+Visuals from tennis players evolution since 2014, [plot animation](https://public.flourish.studio/visualisation/585459/).
 
 ![image](https://user-images.githubusercontent.com/65561135/178552534-c7d62134-733f-4c57-9445-16954b919a16.png)
 
 ## Clustering
-In order to reproduce it yourself feel free to ask me for some sources via linkedin: https://www.linkedin.com/in/carlos-valiente-casas-a270592a/ 
-Then you can execute it from clustering/main.R
+Get tennis tournaments groups based on weather, court, elevation, location and playing style.
+
+![image](https://user-images.githubusercontent.com/65561135/178557288-85a1a20f-a90f-409f-ac23-0338a76f7bbf.png)
+
+![cluster by player03_kmeans4_ok](https://user-images.githubusercontent.com/65561135/178553409-ab0877af-0514-4d51-a597-0617f4c2f11a.png)
 
 ### Feature engineering, clustering y random forest. "f_clusteringBySurface_for_github.R"
 - Data preparation and normalization for clustering
 - Print and plot results
 - Save random forest predictive model in order to predict new observations
 
-![cluster by player03_kmeans4_ok](https://user-images.githubusercontent.com/65561135/178553409-ab0877af-0514-4d51-a597-0617f4c2f11a.png)
+Meaningful conclusion:
 
-### Integridad referencial y join. "f_comprobaciones_torneos_y_traer_altitud.R"
-Función que comprueba la integridad referencial entre dos CSVs y si no existe la crea. 'data' representa una tabla de hechos, y torneos representa una dimensión. Una vez validada la integridad importa la variable altitud a la tabla de hechos y la deja preparada para análisis y machine learning.
+![image](https://user-images.githubusercontent.com/65561135/178557201-8551d8f7-6f67-4558-91aa-ecd9c3773697.png)
+
+To reproduce it yourself feel free to ask me for some sources via [linkedin](https://www.linkedin.com/in/carlos-valiente-casas-a270592a/ )
+Then you can run it from clustering/main.R
+
+### Referential integrity and join. "f_comprobaciones_torneos_y_traer_altitud.R"
+
+Function that checks the referential integrity between two CSV files and then if it does not exist it creates it. 'data' represents a fact table, and tournaments represents a dimension table from my Data Warehouse. Once validations are passed, it add the extra variable elevation to the fact table. Then it will be ready for analysis and machine learning.
 
 ## Keras neural network with custom loss function. "CustomLossFunction.py"
 - Train neural network
